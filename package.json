@@ -1,26 +1,31 @@
 {
-  "name": "next15",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.15"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.15"
-  }
+	"name": "next15",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev --turbo",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"bformat": "pnpm biome format --write ./src",
+		"blint": "pnpm biome lint --write ./src",
+		"bcheck": "pnpm  biome check --fix --unsafe ./src"
+	},
+	"dependencies": {
+		"babel-plugin-react-compiler": "0.0.0-experimental-ad3b12a-20241011",
+		"next": "15.0.0-rc.0",
+		"react": "19.0.0-rc-09111202-20241011",
+		"react-dom": "19.0.0-rc-09111202-20241011"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.3",
+		"@types/node": "^22",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"eslint": "^9",
+		"eslint-config-next": "14.2.15",
+		"postcss": "^8",
+		"tailwindcss": "^3.4.13",
+		"typescript": "^5"
+	}
 }

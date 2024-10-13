@@ -34,3 +34,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/moonbit-darwin-aarch64.sha256
+/pnpm-lock.yaml
