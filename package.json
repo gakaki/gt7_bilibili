@@ -7,6 +7,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
+		"profile":"next build --profile",
 		"bformat": "pnpm biome format --write ./src",
 		"blint": "pnpm biome lint --write ./src",
 		"bcheck": "pnpm  biome check --fix --unsafe ./src"
