@@ -1,16 +1,11 @@
-import { promises as fs } from "node:fs";
-import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import type { CarEntity } from "..";
 import { get_data } from "../carList";
 
 export default async function Page() {
-	const searchParams = useSearchParams();
-	const carName = searchParams.get("carName");
+    
 
 	const data = await get_data();
-	const row = data.find((item) => item.name === carName);
-	console.log(row);
+	console.log(data);
 // https://www.bilibili.com/read/cv7179492/
 	const carSearchRows = (await fs.readFile(
 		"./src/app/carSearch.json",
